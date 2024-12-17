@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style3.css">
+    
+</head>
+<body>
+    
+<div id="home">
+   <div id="name"><p>Bookish Banter
+    </p>
+    </div>
+    
+
+
+<p><div class="container">
+    <h2>Login Form</h2>
+    <form id="login-form">
+        <!-- Name -->
+        <div class="form-group" style="text-align: center;">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group" style="text-align: center;">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <!-- OTP Section -->
+        <div class="otp-container" style="text-align: center;">
+            <div class="form-group">
+                <label for="otp">OTP</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+            </div>
+            <button type="button" class="button" onclick="sendOTP()">Send OTP</button>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="button">Login</button>
+    </form>
+
+    <!-- Sign Up Option -->
+    <div class="signup-option">
+        <p style="color: white;">Don't have an account? <a href="/sinup.html" target="_blank" style="text-decoration: none;">Sign Up</a></p>
+    </div>
+</div>
+</div>
+</p>
+
+</body>
+</html>

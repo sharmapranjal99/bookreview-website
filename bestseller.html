@@ -1,0 +1,369 @@
+<!-- bestseller.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Seller Books</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(220, 240, 252, 0.877);
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #head{
+    text-align: center;
+    color: #333;
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .book img {
+      width: 100%;
+      height: 300px;
+      object-fit: contain;
+    }
+
+    .book-details {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .book-title {
+      font-size: 1.2em;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .book-author {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .book-description {
+      color: #777;
+      font-size: 0.9em;
+    }
+    .button {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+    footer{
+    background-color:grey;
+    color: white;
+    text-align: center;
+}
+.button {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 15px;
+      color: #fff;
+      background-color: #007bff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+    header{
+    text-align: center;
+
+h1{
+    color: rgb(16, 5, 73);
+    font-size: 300%;
+    background-color: rgba(37, 92, 124, 0.877);
+    color: aliceblue;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+    h4{
+        color: rgb(32, 22, 85);
+        font-size: 150%;
+    }
+
+}
+.navi{
+    margin:0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+     background-color: rgba(145, 210, 243, 0.877); 
+    color: aliceblue;
+    /* height: 8vh;
+    position: sticky;
+    
+    top: 0;
+    /* left: 0; */
+    width: 98%; 
+    /* z-index:1;   */
+}
+
+
+</style>
+
+</head>
+<body>
+    <section>
+        <br>
+    <header>
+        <h5><a href="/login.html">LOGIN</a></h5>
+        <h1><strong><em>BOOKISH BANTER</em></strong></h1>
+       
+        <hr>
+        <h4>
+            <em>Read, Review, Repeat</em>
+        </h4>
+    </header>
+<div class="navii">
+    <nav class="sticky-nav">
+        <ul class="navi">
+            <l1><a href="/index.html">Home</a></l1>
+            <l1><a href="index1.html">What to read</a></l1>
+            <l1><a href="/bookreview.html">Book Reviews</a></l1>
+            <l1><a href="/bestseller.html">Best Sellers</a></l1>
+            
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                
+            </div>
+            <l1><a href="/helpsection.html">Help</a></l1>
+        </ul>
+    </nav>
+    </div>
+  <div class="container">
+    <h1 id="head">Best Seller Books</h1>
+    <div class="book-grid">  
+      <!-- Example Book -->
+      <div class="book">
+        <a href="/powerless.html" target="_blank">
+          <img src="/images/WhatsApp Image 2024-12-09 at 19.03.30_beff0670.jpg " alt="Book 1" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">Powerless</h2>
+          <p class="book-author">Lauren Roberts</p>
+          <p class="book-description">Powerless is a part of the Supers of Noble's Green collection.
+
+            Superheroes soar in this promising debut—and they are kids!</p>
+            <br><br><br><br>
+            <a href="thesongbird.html" class="button">Read More</a>
+        
+          
+        </div>
+      </div>
+
+      <!-- Repeat similar blocks for more books -->
+      <div class="book">
+        <a href="/thesongbird.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 19.03.31_2ba24917.jpg" alt="Book 2" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">The Songbird & The Heart Of Stone</h2>
+          <p class="book-author">Carissa Broadbent</p>
+          <p class="book-description">The Songbird & the Heart of Stone is a worthy addition to the Crowns of Nyaxia series that expands its scope while maintaining the emotional depth readers have come to expect.</p>
+          <br><br>
+          <a href="thesongbird.html" class="button">Read More</a>
+        </div>
+      </div>
+
+      <!-- Add more books as needed -->
+      <div class="book">
+        <a href="/thediary.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.33.01_8cd4337b.jpg" alt="Book 3" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">The Diary Of A Young Girl</h2>
+          <p class="book-author">Anne Frank</p>
+          <p class="book-description">The Diary of a Young Girl is one of the most acclaimed works of the 20th century, reveals the humanity of those who suffered at the hands of the Nazis during their occupation of the Netherlands. </p>
+          <br><br>
+          <a href="thediary.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/servant.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 19.03.32_1ec03af3.jpg" alt="Book 4" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">Servant Of Earth</h2>
+          <p class="book-author">Sarah Hawley</p>
+          <p class="book-description">Sarah Hawley lives in the Pacific Northwest, where her hobbies include rambling through the woods and appreciating fictional villains.</p>
+          <br><br><br><br>
+          <a href="servant.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="buddha.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.21.45_bf57955e.jpg" alt="Book 5" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">The Remains Of The Buddha</h2>
+          <p class="book-author">Ratnadip Acharya</p>
+          <p class="book-description">Some secrets are buried still now deep in the ancient Buddhist stupas along with The Remains of The Buddha... Over twenty-five centuries back, a man with an enigmatic charm walked on earth. </p>
+          <br>
+          <a href="buddha.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/dracula.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.28.18_afcea59f.jpg" alt="Book 6" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">Dracula</h2>
+          <p class="book-author">Bram Stoker</p>
+          <p class="book-description">Dracula is an epistolary novel by Bram Stoker that follows a group of English friends and their encounters with Count Dracula, a vampire.</p>
+          <br><br><br><br>
+          <a href="dracula.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/inventions.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.36.11_52d9e28b.jpg" alt="Book 7" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">My Inventions</h2>
+          <p class="book-author">Nikola Tesla</p>
+          <p class="book-description">The Autobiography of Nikola Tesla" is a brief account in Tesla's own words of his early life and education and his career as an important and prolific inventor in the late nineteenth and early twentieth centuries.</p>
+          <br><br>
+          <a href="inventions.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/unfinished.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.41.03_33827b07.jpg" alt="Book 8" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">Unfinished</h2>
+          <p class="book-author">Priyanka Chopra Jonas</p>
+          <p class="book-description">Unfinished offers insights into Priyanka Chopra Jonas's childhood in India; her formative teenage years in the United States; and her return to India, where against all odds as a newcomer to the pageant world.</p>
+          <br><br>
+          <a href="unfinished.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/youcan.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 22.58.33_50760b83.jpg" alt="Book 9" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">You Can</h2>
+          <p class="book-author">George Matthew Adams</p>
+          <p class="book-description">In this book, the author talks about different aspects of life like attitude, success, habits, qualities of winners, positivity, responsibility and more.....</p>
+          <br><br><br>
+          <a href="youcan.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/magic.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-09 at 23.06.33_260fbc69.jpg" alt="Book 10" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">The Magic Of The Lost Temple</h2>
+          <p class="book-author">Sudha Murti</p>
+          <p class="book-description">The Magic of the Lost Temple tells us about a girl named Anoushka. Her pet name is Nooni. She lives in the big city of Bangalore but.....</p>
+          <br><br>
+          <a href="magic.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/village.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-11 at 09.24.33_92ce3e35.jpg" alt="Book 11" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">The Village By The Sea</h2>
+          <p class="book-author">Anita Desai</p>
+          <p class="book-description">The novel's action takes place in a fishing village near the sea named Thul, located in a rural area in India. The novel follows the life of a small family forced to live in poverty. </p>
+          <br><br>
+          <a href="/village.html" class="button">Read More</a>
+        </div>
+      </div>
+      <div class="book">
+        <a href="/theriver.html" target="_blank">
+        <img src="/images/WhatsApp Image 2024-12-11 at 09.29.51_286e5a40.jpg" alt="Book 12" height="250" width="300">
+        </a>
+        <div class="book-details">
+          <h2 class="book-title">A River Sutra</h2>
+          <p class="book-author">Gita Mehta</p>
+          <p class="book-description">A River Sutra is a collection of loosely connected stories unified by three elements: the Narmada River, the theme of love, and the narrator's struggle to comprehend the diverse tales of the human heart he encounters.</p>
+          <a href="theriver.html" class="button">Read More</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div>
+    <a href="/index.html" class="button">Back</a>
+  </div>
+  <footer>
+    <p><a href="#">About Us</a></p>
+ <!-- connected with header  -->
+ <p>Business Customers</p>
+ <p>Privacy Policy</p>
+ <p>Customer Services</p>
+ <p>FAQs</p>
+ <p>Return & Cancellations</p>
+ <p>Terms & Conditions</p>
+ <p>Shipping & Delivery</p>
+ <p><a href="/Sign_Up.html">Sign Up</a></p>
+ <!-- blank link -->
+ <p>Follow Us</p>
+ <p><a href="https://www.facebook.com/">Facebook</a></p>
+ <!-- google links -->
+ <p><a href="https://www.instagram.com/">Instagram</a></p>
+ <p><a href="https://twitter.com/?lang=en">X</a></p>
+ <p><a href="https://www.youtube.com/">Youtube</a></p>
+ <br>
+ <br>
+ <p id="last">copyright2024@BookishBanter.com</p>
+ <br><br>
+ <!-- id is used in home tag -->
+
+</footer>
+</body>
+</html>

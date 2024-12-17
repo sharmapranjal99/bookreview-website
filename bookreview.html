@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(220, 240, 252, 0.877);
+            color: #5D4037;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #3d036a;
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .review {
+            background: #FFE0B2;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .review:hover {
+            transform: scale(1.05);
+        }
+
+        .book-image {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #d0c2bd;
+            overflow: hidden;
+        }
+
+        .book-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .rating {
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .keywords {
+            font-size: 0.9rem;
+            color: #795548;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header{
+    text-align: center;
+
+h1{
+    color: rgb(16, 5, 73);
+    font-size: 300%;
+    background-color: rgba(37, 92, 124, 0.877);
+    color: aliceblue;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+    h4{
+        color: rgb(32, 22, 85);
+        font-size: 150%;
+    }
+
+}
+.navi{
+    margin:0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+     background-color: rgba(145, 210, 243, 0.877); 
+    color: aliceblue;
+    /* height: 8vh;
+    position: sticky;
+    
+    top: 0;
+    /* left: 0; */
+    width: 98%; 
+    /* z-index:1;   */
+}
+    </style>
+</head>
+<body>
+    <section>
+        <br>
+    <header>
+        <h5><a href="/login.html">LOGIN</a></h5>
+        <h1><strong><em>BOOKISH BANTER</em></strong></h1>
+       
+        <hr>
+        <h4>
+            <em>Read, Review, Repeat</em>
+        </h4>
+    </header>
+<div class="navii">
+    <nav class="sticky-nav">
+        <ul class="navi">
+            <l1><a href="/index.html">Home</a></l1>
+            <l1><a href="index1.html">What to read</a></l1>
+            <l1><a href="/bookreview.html">Book Reviews</a></l1>
+            <l1><a href="/bestseller.html">Best Sellers</a></l1>
+            
+            <div class="search-bar">
+                <input type="search" name="search" id="search" placeholder="search">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                
+            </div>
+            <l1><a href="/helpsection.html">Help</a></l1>
+        </ul>
+    </nav>
+    </div>
+    <div class="header">
+        <h1>Book Reviews</h1>
+    </div>
+
+    <div class="reviews">
+        <!-- Repeat the following block for each book -->
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/booook1.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Butter </h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</div>
+                <div class="keywords">Adventure, Mystery, Fantasy</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book2.png" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Ugly Love</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</div>
+                <div class="keywords">Romance, Drama</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/booook3.png" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Relic</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</div>
+                <div class="keywords">Science Fiction, Adventure</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book4.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Mother Teresa</h2>
+                <div class="rating">&#9733;&#9733;&#9734;&#9734;&#9734; (2/5)</div>
+                <div class="keywords">Biography, History</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book5.jpeg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>If She Knew</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</div>
+                <div class="keywords">Mystery, Thriller</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book6.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Gardens of the Moon</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</div>
+                <div class="keywords">Fantasy, Epic</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book7.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>This Book is Funny</h2>
+                <div class="rating">&#9733;&#9733;&#9734;&#9734;&#9734; (2/5)</div>
+                <div class="keywords">Comedy, Satire</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book8.webp" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>The Love Hypothesis</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</div>
+                <div class="keywords">Romance, Contemporary</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book9.webp" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Science and Technology</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</div>
+                <div class="keywords">Science, Technology</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book10.webp" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>The Name of the Wind</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</div>
+                <div class="keywords">Action, Adventure</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book11.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Jezebel</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</div>
+                <div class="keywords">Drama, Classics</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="book-image">
+                <img src="/images/book12.jpg" alt="Book Cover">
+            </div>
+            <div class="content">
+                <h2>Front Lines</h2>
+                <div class="rating">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</div>
+                <div class="keywords">Historical Fiction, War</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
